@@ -1,0 +1,10 @@
+name: workflowWithMultipleNames
+on: workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing both Greet and Bye in Single Line
+        run: |
+            echo "Hi EveryOne"
+            echo "Bye Everyone"
